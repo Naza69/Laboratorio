@@ -1,13 +1,11 @@
-import java.util.Scanner;
+package ProyectoLab.src;
+
 import java.util.Random;
 import java.util.Comparator;
 
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        miobjetopersonalizado tumama;
-        tumama=new miobjetopersonalizado("Cecilia", 45, 1200000, 1.6978543, 512472);
+        new miobjetopersonalizado("Cecilia", 45, 1200000, 1.6978543, 512472);
         misc mis= new misc();
         matrices mtrix = new matrices();
         int[][] matriz, matriztwo, matrizres;
@@ -529,7 +527,7 @@ class misc{
                 }
 
             }
-class miobjetopersonalizado{
+/*class miobjetopersonalizado{
     private String cadena;
     private int entero;
     private float decimalone;
@@ -542,4 +540,4 @@ class miobjetopersonalizado{
         this.decimaltwo=decimaltwo;
         this.any=any;
     }
-}
+}*/
