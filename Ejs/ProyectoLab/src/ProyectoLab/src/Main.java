@@ -5,28 +5,6 @@ import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        new miobjetopersonalizado("Cecilia", 45, 1200000, 1.6978543, 512472);
-        misc mis= new misc();
-        matrices mtrix = new matrices();
-        int[][] matriz, matriztwo, matrizres;
-        matriz=new int[mis.randomnumber()][mis.randomnumber()];
-        matriztwo=new int[mis.randomnumber()][mis.randomnumber()];
-        if(matriz.length>matriztwo.length){
-            matrizres=new int[matriz.length][matriz[0].length];
-        }else matrizres=new int[matriztwo.length][matriztwo[0].length];
-        mtrix.llenar(matriztwo);
-        mtrix.llenar(matriz);
-        matrizres=mtrix.multiplicarMatrices(matriz, matriztwo);
-        System.out.println("Primera matriz: ");
-        mtrix.mostrar(matriz);
-        mtrix.llenar(matriztwo);
-        System.out.println("Segunda matriz: ");
-        mtrix.mostrar(matriztwo);
-        if(matrizres!=null){
-            System.out.println("Matriz resultante: ");
-            mtrix.mostrar(matrizres);
-        }else System.out.println("La matriz resultante es nula, no se pueden multiplicar las matrices ingresadas");
-
     }
 }
 class misc{
@@ -527,17 +505,3 @@ class misc{
                 }
 
             }
-/*class miobjetopersonalizado{
-    private String cadena;
-    private int entero;
-    private float decimalone;
-    private double decimaltwo;
-    private long any;
-    public miobjetopersonalizado(String cadena, int entero, float decimalone, double decimaltwo, long any){
-        this.cadena=cadena;
-        this.entero=entero;
-        this.decimalone=decimalone;
-        this.decimaltwo=decimaltwo;
-        this.any=any;
-    }
-}*/
